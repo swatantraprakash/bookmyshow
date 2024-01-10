@@ -1,8 +1,14 @@
 package com.bookmyshow.bookmyshow.models;
 
-import java.util.Date;
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
-public class ShowSeat {
+import java.util.Date;
+@Getter
+@Setter
+@Entity
+public class ShowSeat extends BaseModel{
     private Show show;
     private Seat seat;
     private ShowSeatStatus showSeatStatus;

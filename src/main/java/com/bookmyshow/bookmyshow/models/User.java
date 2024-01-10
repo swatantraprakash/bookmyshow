@@ -1,8 +1,14 @@
 package com.bookmyshow.bookmyshow.models;
 
-import java.util.List;
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
-public class User {
+import java.util.List;
+@Getter
+@Setter
+@Entity
+public class User extends BaseModel{
     private String name;
     private String email;
     private List<Booking> bookings;

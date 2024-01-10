@@ -1,6 +1,13 @@
 package com.bookmyshow.bookmyshow.models;
 
-public class Payment {
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+public class Payment extends BaseModel{
     private String refNo;
     private int amount;
     private PaymentProvider paymentProvider;

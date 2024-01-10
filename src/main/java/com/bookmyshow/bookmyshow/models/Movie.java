@@ -1,5 +1,12 @@
 package com.bookmyshow.bookmyshow.models;
 
-public class Movie {
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+public class Movie extends BaseModel{
     private String name;
 }

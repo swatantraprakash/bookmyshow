@@ -1,8 +1,14 @@
 package com.bookmyshow.bookmyshow.models;
 
-import java.util.List;
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
-public class Theater {
+import java.util.List;
+@Getter
+@Setter
+@Entity
+public class Theater extends BaseModel{
     private Region region;
     private List<Screen> screens;
 }

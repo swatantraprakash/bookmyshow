@@ -1,9 +1,15 @@
 package com.bookmyshow.bookmyshow.models;
 
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Date;
 import java.util.List;
-
-public class Show {
+@Getter
+@Setter
+@Entity
+public class Show extends BaseModel{
 
     private Movie movie;
     private Date startTime;
