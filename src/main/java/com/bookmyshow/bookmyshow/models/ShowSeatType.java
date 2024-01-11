@@ -12,6 +12,7 @@ public class ShowSeatType extends BaseModel{
     //ShowSeatType = Show + SeatType
 
     private Show show;
+
     private SeatType seatType;
     private int price;
 }
