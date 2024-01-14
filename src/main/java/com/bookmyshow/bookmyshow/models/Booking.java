@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @Entity
 public class Booking extends BaseModel{
+    @Enumerated(EnumType.ORDINAL)
 private BookingStatus bookingStatus;
 
 @ManyToMany
