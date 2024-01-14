@@ -29,6 +29,4 @@ Show                Movie
   M                    1
 Show                 Screen
 1                      1
-
-
  */
