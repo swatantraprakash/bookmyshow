@@ -67,7 +67,7 @@ public class BookingService {
             showSeat.setShowSeatStatus(ShowSeatStatus.BLOCKED);
             saveShowSeats.add(showSeatRepository.save(showSeat));
         }
-        //7.save the updated seat status in DB
+        //7.save the updated seat status in the DB
         //----------End Transaction-----------
         //8.create corresponding booking object
         Booking booking = new Booking();
