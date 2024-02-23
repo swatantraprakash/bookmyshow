@@ -42,7 +42,7 @@ public class BookingService {
             throw new UserNotFoundException();
         }
         User user = userOptional.get();
-        // 2.Get the show with ShowId
+        //2.Get the show with ShowId
         Optional<Show> showOptional = showRepository.findById(showId);
         if (showOptional.isEmpty()) {
             throw new RuntimeException();
