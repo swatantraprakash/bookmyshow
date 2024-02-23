@@ -36,7 +36,7 @@ public class BookingService {
 
     @Transactional
     public Booking bookMovie(Long userId, List<Long> seatIds, Long showId) {
-        //1.Get the User with  userId
+        //1.Get the User with userId
         Optional<User> userOptional = userRepository.findById(userId);
         if (userOptional.isEmpty()) {
             throw new UserNotFoundException();
