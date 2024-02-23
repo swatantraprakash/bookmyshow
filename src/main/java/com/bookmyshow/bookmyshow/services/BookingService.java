@@ -51,6 +51,7 @@ public class BookingService {
         //-----------Start Transaction ------------
         //3.Get the seats with seatIds provided
         List<ShowSeat> showSeatList = showSeatRepository.findAllById(seatIds);
+        //4.check if the seat are available
         for (ShowSeat showSeat : showSeatList) {
             if (!showSeat.getShowSeatStatus().equals(ShowSeatStatus.AVAILABLE) ||
                     (showSeat.getShowSeatStatus().equals(ShowSeatStatus.BLOCKED)) ||
@@ -59,7 +60,6 @@ public class BookingService {
                 throw new RuntimeException();
             }
         }
-        //4.check if the seat are available
         //5.if no, return error
         //6.if yes,mark the status of seat as locked
         List<ShowSeat> saveShowSeats = new ArrayList<>();
