@@ -48,7 +48,7 @@ public class BookingService {
             throw new RuntimeException();
         }
         Show bookedShow = showOptional.get();
-        //-----------Start Transaction -----------
+        //-----------Start Transaction ------------
         //3.Get the seats with seatIds provided
         List<ShowSeat> showSeatList = showSeatRepository.findAllById(seatIds);
         for (ShowSeat showSeat : showSeatList) {
