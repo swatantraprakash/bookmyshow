@@ -69,7 +69,7 @@ public class BookingService {
         }
         //7.save the updated seat status in DB
         //----------End Transaction-----------
-        //8.create  corresponding booking object
+        //8.create corresponding booking object
         Booking booking = new Booking();
         booking.setBookingStatus(BookingStatus.PENDING);
         booking.setShowSeats(saveShowSeats);
