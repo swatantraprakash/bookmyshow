@@ -26,7 +26,7 @@ public class UserController {
             signUpResponseDto.setUserId(user.getId());
             signUpResponseDto.setResponseStatus(ResponseStatus.SUCCESS);
         }catch (Exception e){
-            System.out.println("User Already Exists");
+            System.out.println("User Already Exists !!");
             signUpResponseDto.setResponseStatus(ResponseStatus.FAILED);
         }
         return signUpResponseDto;

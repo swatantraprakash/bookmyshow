@@ -22,7 +22,7 @@ public class ShowSeat extends BaseModel{
 }
 
 /*
-  M                       1
+  M                      1
 ShowSeat               Show
  1                      1
 
