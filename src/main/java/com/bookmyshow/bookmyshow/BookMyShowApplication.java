@@ -22,7 +22,7 @@ public class BookMyShowApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         SignUpRequestDto signUpRequestDto = new SignUpRequestDto();
         signUpRequestDto.setEmail("Sp1@gmail.com");
-        signUpRequestDto.setPassword("Sp@1234");
+        signUpRequestDto.setPassword("Sp@12344");
 		userController.signUp(signUpRequestDto);
     }
 }
